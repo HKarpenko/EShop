@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MyWebPage</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <nav class="mb-5 navbar navbar-expand-lg navbar-dark indigo lighten-1">
+
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="nav-link p-0" href="#">
+                        <img src="~/Content/img/myLogo.png" class="z-depth-1" height="30">
+                    </a>
+                </div>
+
+                <a class="navbar-brand" href="#">Strona główna</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#Aktualnosci">Aktualności</a>
+                        <a class="nav-item nav-link" href="#Polecamy">Polecamy</a>
+                        <a class="nav-item nav-link" href="#Ostatnie">Ostatnie</a>
+                    </div>
+                    <div class="navbar-nav ml-auto nav-flex-icons">
+                        <a class="nav-link p-0" href="#">
+                            <img src="~/Content/img/shopLogo.jpg" class="rounded-circle z-depth-0"
+                                 alt="avatar image" height="35">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="mt-3 page-footer font-small indigo">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 text-md-left mx-auto my-4">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Dane kontaktowe</h5>
+
+                        <div>Infolinia: 800 000 000</div>
+                        <div>Dla komórek: +48 123 456 789</div>
+                        <div>Email: examle@mail.pl</div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 text-md-center mx-auto mt-5">
+
+                        <img src="~/img/myLogo.png" class="z-depth-1" alt="logo image" height="80">
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 text-md-right mx-auto my-4">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Konto bankowe:</h5>
+
+                        <div>0055 0022 2100 0000</div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
